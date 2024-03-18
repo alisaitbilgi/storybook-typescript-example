@@ -5,9 +5,7 @@ const SRC = `${ROOT}/src`;
 module.exports = {
     stories: ['../src/**/*.stories.[tj]sx'],
     addons: [
-        '@storybook/addon-storysource',
-        '@storybook/addon-docs',
-        '@storybook/addon-knobs/register'
+        "storybook-zeplin/register"
     ],
     webpackFinal: async (config) => {
         config.module.rules.push(
